@@ -1,0 +1,51 @@
+{
+    "name": "superbig/craft-internalsearch",
+    "description": "Fast internal search",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "internal search"
+    ],
+    "support": {
+        "docs": "https://github.com/sjelfull/craft-internalsearch/blob/master/README.md",
+        "issues": "https://github.com/sjelfull/craft-internalsearch/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Superbig",
+            "homepage": "https://superbig.co"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "teamtnt/tntsearch": "^1.1.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "superbig\\internalsearch\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Internal Search",
+        "handle": "internal-search",
+        "schemaVersion": "1.0.0",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/sjelfull/craft-internalsearch/master/CHANGELOG.md",
+        "components": {
+            "internalSearchService": "superbig\\internalsearch\\services\\InternalSearchService"
+        },
+        "class": "superbig\\internalsearch\\InternalSearch"
+    }
+}
